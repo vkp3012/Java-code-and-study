@@ -1,0 +1,698 @@
+___________________________________________________________________________________________________
+                                      Zero Class DSA ---- 19 Jan 2020
+___________________________________________________________________________________________________
+
+---------------------------------------- QNA ------------------------------------------------------
+
+1). Rajnesh Kumar (Co-Founder) ----------------------> DSA Head,Team
+2). DSA  --------------> Team, Head
+3). Level1 + Level2 + Level3
+4). Level1 ------------> Teacher --------------> 45 Days Class
+    Level2 and 3 -----------Topic Wise Expert
+
+5). Class1 + 2D Array---------------- Max 10 Class
+    Recvrsion ----------------------- Avg Speed-------- Contest
+    Link List/Stack/quces ----------- Fast
+    DP ------------------------------ (Avg --- Fast)
+    Graph --------------------------- (Avg --- Fast)
+    Tns ----------------------------- (Avg --- Fast)
+
+6). Level1 -------------------------- (Fix Teacher + Thinking + Coding)
+    Level2 -------------------------- (Expert Teacher + Thinking Develop)---- ( Nodes Contect + Leetcode)
+    Level3 -------------------------- 
+
+7). Question
+      | 
+      |
+      |
+    Think 
+      |
+      |
+      |
+    Dry Run + Test Case
+       |
+       |
+       |
+   Pscode Code
+       |
+       |
+       |
+      Code
+
+_______________________________________________________________________
+        kartikeya Gupta -----  DSA --------- Level1 ----- Traniner
+_______________________________________________________________________
+
+Class Flow ---- Question( 2 and 3 Mint) ---------- Dry Run ------- Code
+
+--------------------------------------------------------------------------
+What is Java?
+
+Java is a popular programming language, created in 1995.
+It is owned by Oracle, and more than 3 billion devices run Java.
+
+It is used for:
+1).Mobile applications (specially Android apps)
+2).Desktop applications
+3).Web applications
+4).Web servers and application servers
+5).Games
+6).Database connection
+And much, much more!
+
+
+Why Use Java?
+
+1).Java works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc.)
+2).It is one of the most popular programming language in the world
+3).It is easy to learn and simple to use
+4).It is open-source and free
+5).It is secure, fast and powerful
+6).It has a huge community support (tens of millions of developers)
+7).Java is an object oriented language which gives a clear structure to programs and allows code to be reused, lowering development costs
+8).As Java is close to C++ and C#, it makes it easy for programmers to switch to Java or vice versa
+
+
+Java Syntax:-
+we created a Java file called Main.java
+
+Note: Java is case-sensitive: "MyClass" and "myclass" has different meaning.
+Note: The curly braces {} marks the beginning and the end of a block of code.
+
+Note: Each code statement must end with a semicolon.
+_______________________________________________________________________________
+Single-line Comments:-
+Single-line comments start with two forward slashes (//).
+
+Any text between // and the end of the line is ignored by Java (will not be executed).
+
+
+Java Multi-line Comments:- 
+Multi-line comments start with /* and ends with */.
+
+Any text between /* and */ will be ignored by Java.
+------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+1). How to print in Java
+   
+Import java.util.*;
+ pubic class Main{
+    public static void main(string[] args){
+            // Write  your code here
+		System.out.print("Hello Everyone");
+
+                //Next line print
+                System.out println("Welcome");  \\ Move Next line
+
+                // or 
+                System.out.print("Hello \n");
+
+ }
+}
+
+______________________________________________________________________________
+Note :- 
+Syntax :-
+1). System.out.println("Any Text");
+
+2). Difference B/w System.out.print and System.out.println
+
+     1. System.out.print ----- Not Break Line
+     2. Systen.out.println ---- Line Break
+______________________________________________________________________________
+
+2). Print T 
+
+Import java.util.*;
+ pubic class Main{
+    public static void main(string[] args){
+            // Write  your code here
+		System.out.println("*******");
+		System.out.println("   *");
+		System.out.println("   *");
+		System.out.println("   *");
+     		System.out.println("   *");
+		System.out.println("   *");
+		System.out.println("   *")
+
+ }
+}
+__________________________________________________________________________________
+3). Print Z 
+
+Import java.util.*;
+ pubic class Main{
+    public static void main(string[] args){
+            // Write  your code here
+		System.out.println("*    *");
+		System.out.println(" *  *");
+		System.out.println("  *");
+		System.out.println(" *  *");
+		System.out.println("*    *");
+ }
+}
+
+
+_____________________________________________________________________
+Theory ---- Lets us code x = 10
+			y = 20
+			z = 30
+
+_____________________________________________________________________
+
+Java Variables:- 
+
+Variables are containers for storing data values. 
+In Java, there are different types of variables, for example:
+
+ 1).String - stores text, such as "Hello". String values are surrounded by double quotes
+ 2).int - stores integers (whole numbers), without decimals, such as 123 or -123
+ 3).float - stores floating point numbers, with decimals, such as 19.99 or -19.99
+ 4).char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+ 5).boolean - stores values with two states:-true or false
+
+Syntax:- 
+     type variableName = value;
+
+Where,
+     type is one of Java's types (such as int or String)
+     variableName is the name of the variable (such as x or name). 
+     The equal sign is used to assign values to the variable.
+
+-------------------------------------------------------------------------------------------
+Java Identifiers:- 
+All Java variables must be identified with unique names.
+
+These unique names are called identifiers.
+
+Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+Note: It is recommended to use descriptive names in order to create understandable and maintainable code:
+
+--------------------------------------------------------------------------------------------------------------
+he general rules for naming variables are:
+
+Names can contain letters, digits, underscores, and dollar signs
+Names must begin with a letter
+Names should start with a lowercase letter and it cannot contain whitespace
+Names can also begin with $ and _ (but we will not use it in this tutorial)
+Names are case sensitive ("myVar" and "myvar" are different variables)
+Reserved words (like Java keywords, such as int or boolean) cannot be used as names
+
+	
+Ex:-
+int x = 10(any Value)
+
+Where,
+     int = data Types
+     x = Variable Name
+     10 = assignment opeater
+
+______________________________________________________________________
+Data Types:-
+Data types are divided into two groups:
+
+	1).Primitive data types - includes byte, short, int, long, float, double, boolean and char
+	2).Non-primitive data types - such as String, Arrays and Classes (you will learn more about these in a later chapter)
+
+Numbers:- 
+Primitive number types are divided into two groups:
+
+	1).Integer types stores whole numbers, positive or negative (such as 123 or -456), without decimals. 
+		Valid types are byte, short, int and long. Which type you should use, depends on the numeric value.
+	2).Floating point types represents numbers with a fractional part, containing one or more decimals. 
+		There are two types: float and double.
+
+Even though there are many numeric types in Java, the most used for numbers are int (for whole numbers) and double (for floating point numbers). 
+However, we will describe them all as you continue to read.
+------------------------------------------------------------------------------------------------------
+Integer Types:-
+
+Byte:- 
+The byte data type can store whole numbers from -128 to 127. 
+This can be used instead of int or other integer types to save memory when you are certain that the value will be within -128 and 127:
+
+Short:-
+The short data type can store whole numbers from -32768 to 32767:
+
+Int:-
+The int data type can store whole numbers from -2147483648 to 2147483647. 
+
+Long:-
+The long data type can store whole numbers from -9223372036854775808 to 9223372036854775807. 
+This is used when int is not large enough to store the value. Note that you should end the value with an "L":
+
+
+1). Integer ----------- 1). int ------- 4 bytes
+		        2). long ------ 8 Bytes
+_____________________________________________________________________________________________________________________________
+2).Floating Point Types:-
+
+You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.
+
+Float
+The float data type can store fractional numbers from 3.4e−038 to 3.4e+038. Note that you should end the value with an "f":
+
+Double
+The double data type can store fractional numbers from 1.7e−308 to 1.7e+308. Note that you should end the value with a "d":
+
+Decimal/10.89 ----- 1). float
+		    2). double
+
+Note:-
+Use float or double?
+
+The precision of a floating point value indicates how many digits the value can have after the decimal point. 
+The precision of float is only six or seven decimal digits, while double variables have a precision of about 15 digits. 
+Therefore it is safer to use double for most calculations.
+
+Scientific Numbers:-
+A floating point number can also be a scientific number with an "e" to indicate the power of 10:
+_________________________________________________________________________________________________________________________________
+
+3). Char -------------- {a,b,c .....}
+
+Characters
+The char data type is used to store a single character. 
+The character must be surrounded by single quotes, like 'A' or 'c':
+_________________________________________________________________________________________________________________________________
+4).Booleans
+A boolean data type is declared with the boolean keyword and can only take the values true or false:
+
+Boolean ----------- {True/False}
+Boolean Expression
+A Boolean expression is a Java expression that returns a Boolean value: true or false.
+
+You can use a comparison operator, such as the greater than (>) operator to find out if an expression (or a variable) is true.
+The Boolean value of an expression is the basis for all Java comparisons and conditions.
+______________________________________________________________________
+Strings:-
+
+The String data type is used to store a sequence of characters (text). 
+String values must be surrounded by double quotes:
+
+Note:-
+The String type is so much used and integrated in Java, that some call it "the special ninth type".
+A String in Java is actually a non-primitive data type, because it refers to 
+an object. The String object has methods that are used to perform certain 
+operations on strings. Don't worry if you don't understand the term "object" just yet. 
+We will learn more about strings and objects in a later chapter.
+_____________________________________________________________________________________
+Java Strings:-
+
+Strings are used for storing text.
+A String variable contains a collection of characters surrounded by double quotes:
+
+String Length
+A String in Java is actually an object, which contain methods that can perform certain operations on strings. 
+For example, the length of a string can be found with the length() method:
+
+More String Methods
+There are many string methods available, for example toUpperCase() and toLowerCase():
+
+Finding a Character in a String
+The indexOf() method returns the index (the position) of the first occurrence of a specified text in a string (including whitespace):
+
+
+String Concatenation
+The + operator can be used between strings to combine them. This is called concatenation:
+
+____________________________________________________________________________________________________________________________________
+Non-Primitive Data Types:- 
+
+Non-primitive data types are called reference types because they refer to objects.
+
+____________________________________________________________________________________________________________________________________
+The main difference between primitive and non-primitive data types are:
+
+
+Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and 
+is not defined by Java (except for String).
+Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+A primitive type has always a value, while non-primitive types can be null.
+A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
+The size of a primitive type depends on the data type, while non-primitive types have all the same size.
+__________________________________________________________________________________________________________________________________
+Java Type Casting:-
+
+Type casting is when you assign a value of one primitive data type to another type.
+In Java, there are two types of casting:
+
+1).Widening Casting (automatically) - converting a smaller type to a larger type size
+  	byte -> short -> char -> int -> long -> float -> double
+2).Narrowing Casting (manually) - converting a larger type to a smaller size type
+  	double -> float -> long -> int -> char -> short -> byte
+
+
+Widening Casting
+Widening casting is done automatically when passing a smaller size type to a larger size type.
+
+Narrowing Casting
+Narrowing casting must be done manually by placing the type in parentheses in front of the value.
+___________________________________________________________________________________________________________________________________
+
+Operaters:- 
+
+1). Sum(+)
+2). Sub (-)
+3). Mult(*)
+4). Div (/) --------> Quatient
+
+ex:- 
+int 2/3---- int -ve value 
+int 2/3 = 0
+int 3/2= 1
+float 2/3 = 0.6666
+
+5). Modulus(%) -----------> O/p -----> Remainder
+  Ex:- 
+    3%2 = 1
+    2%3 = 2 (same as)
+
+6).Assignment Operater(=)
+	RHS -----> LHS assign
+
+7). Equal to (==)
+      a = 15
+      b = 20 
+      a == b ----------->  not eual
+
+8) Not Equal (!=)
+9) Greater (>)
+10) Greater Than (>=)
+11) Less (<)
+12) Less Than (<=)
+
+Operator	Name	                   Description	                        Example	  
+  +	      Addition	               Adds together two values	                 x + y	
+  -	      Subtraction              Subtracts one value from another	         x - y	
+  *	      Multiplication	       Multiplies two values	                 x * y	
+  /	      Division	               Divides one value by another	         x / y	
+  %	      Modulus	               Returns the division remainder	         x % y	
+  ++	      Increment	               Increases the value of a variable by 1	 ++x	
+  --	      Decrement	               Decreases the value of a variable by 1	 --x
+
+Java Comparison Operators:-
+Comparison operators are used to compare two values:
+
+Operator	           Name    			Example	
+ ==			Equal to			x == y	
+ !=			Not equal			x != y	
+ >			Greater than			x > y	
+ <			Less than			x < y	
+ >=			Greater than or equal to	x >= y	
+ <=			Less than or equal to		x <= y
+_______________________________________________________________________________________________________________
+Conditions:-
+
+if , elseif, else
+
+Ex:- 
+	if (cond)
+		{
+	}
+	else if (Cond.){
+	
+	}
+	else{
+	}
+	
+if ---- one cond
+else --- Not Compulsory
+
+Java has the following conditional statements:
+
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+
+
+The if Statement
+
+Use the if statement to specify a block of Java code to be executed if a condition is true.
+
+
+Syntax
+if (condition) {
+  // block of code to be executed if the condition is true
+}
+
+
+
+
+Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.
+
+
+The else Statement
+Use the else statement to specify a block of code to be executed if the condition is false.
+
+
+Syntax
+if (condition) {
+  // block of code to be executed if the condition is true
+} else {
+  // block of code to be executed if the condition is false
+}
+
+The else if Statement
+
+Use the else if statement to specify a new condition if the first condition is false.
+
+
+Syntax
+if (condition1) {
+  // block of code to be executed if condition1 is true
+} else if (condition2) {
+  // block of code to be executed if the condition1 is false and condition2 is true
+} else {
+  // block of code to be executed if the condition1 is false and condition2 is false
+}
+
+Short Hand If...Else (Ternary Operator)
+There is also a short-hand if else, which is known as the ternary operator because it consists of three operands. It can be used to replace multiple lines of code with a single line. It is often used to replace simple if else statements:
+
+Syntax
+variable = (condition) ? expressionTrue :  expressionFalse;
+________________________________________________________________________
+Note:- 
+1). Not use semi-colume in if statement.
+2). Not COndition in else statement.
+________________________________________________________________________
+
+Example:-
+1).Write a program to find even or odd number.
+
+Sol:- 
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int a = 54;
+        if (a%2==0)
+        {
+            System.out.print("Even");
+        }
+        else
+        {
+            System.out.print("odd");
+        }
+    }
+}
+_____________________________________________________________________________
+Relation Operater:-
+
+1).OR (||) 
+
+Truth Table:- 
+______________
+x  y  output
+0  0    0 ---> if (false || false) ----  Not Run(Not Excute)----> If my both cond. are false
+0  1    1 --------------------- True
+1  0    1 --------------------- True
+1  1    1 --------------------- True
+________________________________________________________________________________
+
+2). And Operater (&&)
+
+Truth Table: -
+
+x  y  o/p
+0  0   0
+0  1   0
+1  0   0
+1  1   1
+_____________________________________________________________________________________________
+3). XOR Operater(^)
+
+Truth table:-
+
+x  y  o/p
+0  0  0
+0  1  1
+1  0  1
+1  1  0
+
+______________________________________________________________________________________________
+
+Java Logical Operators
+Logical operators are used to determine the logic between variables or values:
+
+Operator		Name			Description						Example	
+ && 			Logical and	Returns true if both statements are true			x < 5 &&  x < 10	
+ || 			Logical or	Returns true if one of the statements is true			x < 5 || x < 4	
+ !			Logical not	Reverse the result, returns false if the result is true		!(x < 5 && x < 10)
+__________________________________________________________________________________________________________________________
+2). Program to find Three largest number
+
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //int a = 23;
+        //int b = 45;
+        //int c = 12;
+	int a=23,b=45,c=12;
+        if (a>b && a>c)
+        {
+            System.out.print("a");
+        }
+        else if (b>a && b>c) or (b>c)
+        {
+            System.out.print("b");
+        }
+        else{
+            System.out.print("c");
+        }
+    }
+}
+
+-------------------------------- End Class -----------------------------------------------------------
+Note:- 
+
+How to diffined I/p and O/p Function:-
+
+One popular way to read input from stdin is by using the Scanner class and specifying the Input Stream as System.in. 
+
+For example:
+
+Import.java.util.*;
+public class Main {
+	public static void Main(string[] args){
+                     Scanner scanner = new Scanner(System.in);
+                     String myString = scanner.next();
+                     int myInt = scanner.nextInt();
+                     scanner.close();
+                     System.out.println("myString is: " + myString);
+                     System.out.println("myInt is: " + myInt);
+ }
+}
+
+
+The code above creates a Scanner object named scanner and uses it to read a String and an int. 
+It then closes the Scanner object because there is no more input to read, and prints to stdout using System.out.println(String). 
+
+------------------------
+So, if our input is: Hi 5
+------------------------------
+Our code will print:
+
+myString is: Hi
+myInt is: 5
+
+_______________________________________________________________________________________________________________________________
+ 21 Jan 2022
+_______________________________________________________________________________________________________________________________
+Java Math
+
+Math.max(x,y)
+The Math.max(x,y) method can be used to find the highest value of x and y.
+
+Math.min(x,y)
+The Math.min(x,y) method can be used to find the lowest value of x and y:
+
+Math.sqrt(x)
+The Math.sqrt(x) method returns the square root of x:
+
+Math.abs(x)
+The Math.abs(x) method returns the absolute (positive) value of x:
+
+Random Numbers
+Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive):
+To get more control over the random number, e.g. you only want a random number between 0 and 100.
+
+______________________________________________________________________________________________________________________________________
+Java Switch Statements
+Use the switch statement to select one of many code blocks to be executed.
+
+Syntax
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+
+This is how it works:
+
+The switch expression is evaluated once.
+The value of the expression is compared with the values of each case.
+If there is a match, the associated block of code is executed.
+The break and default keywords are optional.
+
+The break Keyword
+When Java reaches a break keyword, it breaks out of the switch block.
+
+This will stop the execution of more code and case testing inside the block.
+
+When a match is found, and the job is done, it's time for a break. There is no need for more testing.
+
+A break can save a lot of execution time because it "ignores" the execution of all the rest of the code in the switch block.
+
+The default Keyword
+The default keyword specifies some code to run if there is no case match:
+
+Note that if the default statement is used as the last statement in a switch block, it does not need a break.
+
+______________________________________________________________________________________________________________________
+
+Loops
+There are 3 Types loop:-
+1). For Loop
+2). While Loop
+3). Do While Loop
+Loops can execute a block of code as long as a specified condition is reached.
+
+Loops are handy because they save time, reduce errors, and they make code more readable.
+
+1).Java While Loop
+The while loop loops through a block of code as long as a specified condition is true:
+Cond. is not stisfied than Loop is terminate.
+Syntax
+while (condition) {
+  // code block to be executed
+}
+
+2).Do/While Loop
+The do/while loop is a variant of the while loop. This loop will execute the code block once,
+ before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+Syntax
+do {
+  // code block to be executed
+}
+while (condition);
+
+3). For Loop:-
+for(i=1;i<=5;i++){
+	System.out.print("*");
+}
+	
