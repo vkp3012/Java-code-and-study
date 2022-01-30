@@ -8,6 +8,9 @@
 
 
 Code: ------------------------
+
+1. Java code
+
 import java.util.*;
 
 public class Main{
@@ -29,3 +32,19 @@ public class Main{
     }
 }
 
+
+2.Python Code Generation
+
+marks=int(input())
+
+#write your code here
+if (marks>90):
+    print("excellent")
+elif (marks>80):
+    print("good")
+elif (marks>70):
+    print("fair")
+elif (marks>60):
+    print('meets expectations')
+else:
+    print("below par")

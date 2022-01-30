@@ -8,6 +8,8 @@ Print z Pattern:-----------
 ***** 
 
 Code:-
+
+1. java code
 import java.util.*;
 
 public class Main {
@@ -19,3 +21,11 @@ public class Main {
     System.out.println("*****");
     }
 }
+
+
+2. Python Code
+print("*****");
+print("   *");
+print("  *");
+print(" *");
+print("*****");
