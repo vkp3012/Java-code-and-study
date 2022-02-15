@@ -1,0 +1,31 @@
+1.You've to check whether a given number is Even or Odd. 
+2.Number of test case is t i.e
+
+                t = 4
+
+3. Take a number "n" as input "t" number of times.
+
+        i.e t = 4
+        than n is 20
+                  30
+                  45
+                  60
+
+1. Java
+
+
+import java.util.*;
+public class MyClass {
+    public static void main(String args[]) {
+     Scanner scn = new Scanner(System.in);
+     int t = scn.nextInt();
+     for(int i = 1;i<=t;i++){
+         int m = scn.nextInt();
+         if(m%2==0){
+             System.out.println("Even");
+         }else{
+             System.out.println("Odd");
+     }
+     }
+    }
+}
