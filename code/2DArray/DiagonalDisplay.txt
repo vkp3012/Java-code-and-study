@@ -44,7 +44,9 @@ Output
 Diagonal traversal as in image below
 
 Example
-Sample Input
+Sample Input:-
+
+
 
 4
 11
@@ -64,7 +66,7 @@ Sample Input
 43
 44
 
-Sample Output
+Sample Output:-
 11
 22
 33
@@ -103,4 +105,5 @@ public class Main{
             }
         }
     }
+
 }
