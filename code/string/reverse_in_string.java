@@ -8,7 +8,7 @@ public class reverse_in_string{
     // private static final String REGEX = ;
 
     public static void main(String args[]){
-        String s = "i.like.this.program.very.mush";
+        String s = "i.l.a";
         String[] str_arr = s.split("\\.");
 
         String str = "";
@@ -16,7 +16,7 @@ public class reverse_in_string{
             // System.out.print(str_arr[i] + " ");
             str += str_arr[str_arr.length - 1 - i];
             if(i<str_arr.length - 1){
-                str += ".";
+                str += " ";
             }
         }
         System.out.println(str);

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class construction_and_display {
+public class construction_and_display{
 
   public static class Node{
       int data;

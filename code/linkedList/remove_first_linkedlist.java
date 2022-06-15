@@ -146,6 +146,12 @@ public class remove_first_linkedlist{
  
         // Print the LinkedList
         printList(list);
+
+        //last
+        deleteByKey(list, 8);
+ 
+        // Print the LinkedList
+        printList(list);
  
         // Delete node with value 10
         // In this case the key is ***not present***

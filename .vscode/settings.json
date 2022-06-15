@@ -1,3 +1,9 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "java.project.sourcePaths": [
+        "code/string",
+        "code/binary_tree",
+        "code/GenericTree",
+        "code/linkedList"
+    ]
 }

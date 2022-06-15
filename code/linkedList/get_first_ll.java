@@ -56,6 +56,30 @@ public class get_first_ll{
         System.out.println("Get Last Linked List: " + currNode.data);
     }
 
+    public static void getAt(get_first_ll list,int data){
+        Node currNode = list.head;
+
+        while(currNode != null && currNode.data != data){
+          currNode = currNode.next;
+        }
+
+        if( currNode != null){
+            System.out.println("Get middle of Linked List: " + currNode.data);
+        }
+    }
+
+    public static void getnotfound(get_first_ll list,int data){
+        Node currNode = list.head;
+
+        while(currNode != null && currNode.data != data){
+            currNode = currNode.next;
+        }
+
+        if(currNode == null){
+            System.out.println("Not found data : " + data);
+        }
+    }
+
     public static void main(String args[]){
 
         get_first_ll list = new get_first_ll();
@@ -77,6 +101,18 @@ public class get_first_ll{
         //print 1st data in ll
         getfirst(list);
 
+        printList(list);
+
+        //print last
         getlast(list);
+        printList(list);
+
+        //print at any value
+        getAt(list,6);
+        printList(list);
+
+        //print not found
+        getnotfound(list,10);
+        printList(list);
     }
 }
