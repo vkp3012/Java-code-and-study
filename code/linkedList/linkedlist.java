@@ -25,13 +25,11 @@ public class linkedlist{
         Node new_node = new Node(data);
         new_node.next = null;
     
-        //if Linked list is empty
-        //then make the new node as  head 
+        //if Linked list is empty then make the new node as  head 
         if(list.head == null){
             list.head = new_node;
         }else{
-            //else traverse till the last node
-            //and insert node there
+            //else traverse till the last node and insert node there
             Node last = list.head;
             while(last.next != null){
                 last = last.next;
