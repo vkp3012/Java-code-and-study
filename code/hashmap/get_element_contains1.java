@@ -1,7 +1,6 @@
 import java.util.HashMap;
 
 // Get Common Elements - 1
-// Easy
 
 // 1. You are given a number n1, representing the size of array a1.
 // 2. You are given n1 numbers, representing elements of array a1.
@@ -27,42 +26,19 @@ import java.util.HashMap;
 // Example
 // Sample Input
 
-// 9
-// 5
-// 5
-// 9
-// 8
-// 5
-// 5
-// 8
-// 0
-// 3
-// 18
-// 9
-// 7
-// 1
-// 0
-// 3
-// 6
-// 5
-// 9
-// 1
-// 1
-// 8
-// 0
-// 2
-// 4
-// 2
-// 9
-// 1
-// 5
+//n1 ->  9
+// array1 ---> {5,5,9,8,5,5,8,0,3}
 
-// Sample Output
-// 9
-// 0
-// 3
-// 5
-// 8
+//n2 ---> 18
+
+// array2 --->  {9,7,1,0,3,6,5,9,1,1,8,0,2,4,2,9,1,5}
+
+// Sample Output ->
+                    // 9
+                    // 0
+                    // 3
+                    // 5
+                    // 8
 
 
 public class get_element_contains1{
