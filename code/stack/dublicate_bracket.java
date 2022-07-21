@@ -13,16 +13,25 @@ public class dublicate_bracket{
 
             for(int i = 0;i<exp.length();i++){
                 char ch = exp.charAt(i);
+
+                //closing bracket
                 if(ch == ')'){
+
+                    //opening bracket
                     if(st.peek() == '('){
                         System.out.print(true);
                         return;
+                        
                     }else{
+
+                        //mis-match
                         while(st.peek() != '('){
                             st.pop();
                         }
+
                         st.pop();
                     }
+
                 }else{
                     st.push(ch);
                 }

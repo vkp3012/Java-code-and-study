@@ -56,6 +56,5 @@ public class pid{
         System.out.println(n);
         pdi(n-1);
         System.out.println(n);
-
     }
 }

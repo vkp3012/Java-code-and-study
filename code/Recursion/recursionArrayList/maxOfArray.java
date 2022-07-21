@@ -1,4 +1,4 @@
-package RecursionBasic;
+package recursionArrayList;
 
 // Max Of An Array
 // Easy

@@ -15,8 +15,11 @@ public class construction_and_display{
 
     
   public static Node construct(int []arr){
+
     Stack<Node>st = new Stack<>();
+
     Node root = new Node(arr[0]);
+    
     st.push(root);
 
     for(int i = 1;i<arr.length;i++){

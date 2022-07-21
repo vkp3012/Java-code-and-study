@@ -2,8 +2,13 @@
     "git.ignoreLimitWarning": true,
     "java.project.sourcePaths": [
         "code/string",
+        "code/stack",
+        "code/linkedList",
+        "code/graph",
         "code/binary_tree",
+        "code/binarySearchTree",
         "code/GenericTree",
-        "code/linkedList"
+        "code/hashmap",
+        "code\\Recursion"
     ]
 }

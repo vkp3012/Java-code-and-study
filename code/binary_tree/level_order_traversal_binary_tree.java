@@ -1,11 +1,14 @@
+import java.util.ArrayDeque;
+import java.util.Queue;
 import java.util.Stack;
 
-public class print_in_range{
+public class level_order_traversal_binary_tree{
+
     public static class Node{
         int data;
         Node left;
         Node right;
-        Node(int data,Node left,Node right){
+        Node(int data, Node left,Node right){
             this.data = data;
             this.left = left;
             this.right = right;
@@ -13,31 +16,41 @@ public class print_in_range{
     }
 
     public static class Pair{
-        int status;
         Node node;
-        Pair(Node node,int status){
+        int state;
+        Pair(Node node,int state){
             this.node = node;
-            this.status = status;
+            this.state = state;
         }
     }
 
-    public static void pir(Node node, int d1,int d2){
+    public static void level_order_traversal(Node node){
+        if(node == null) return;
 
-        if(node == null){
-            return;
-        }
+        Queue<Node>q = new ArrayDeque<>();
 
-        if(node.data>d1 && node.data>d2){
-            pir(node.left,d1,d2);
-        }else if(node.data<d1 && node.data<d2){
-            pir(node.right,d1,d2);
-        }else{
-            pir(node.left,d1,d2);
-            System.out.println(node.data);
-            pir(node.right,d1,d2);
+        q.add(node);
+        while(q.size()>0){
+
+            int sz = q.size();
+
+            while(sz-- > 0){
+                
+                node = q.remove();
+                System.out.print(node.data + " ");
+
+                if(node.left != null){
+                    q.add(node.left);
+                }
+
+                if(node.right != null){
+                    q.add(node.right);
+                }
+
+            }
+            System.out.println();
         }
     }
-    
 
     public static void main(String args[]){
         Integer[] arr = {50,25,12,null,null,37,30,null,null,null,75,62,null,70,null,null,87,null,null};
@@ -51,32 +64,33 @@ public class print_in_range{
         int idx = 0;
         while(st.size()>0){
             Pair top = st.peek();
-            if(top.status == 1){
+            if(top.state == 1){
                 idx++;
                 if(arr[idx] != null){
                     Node ln = new Node(arr[idx],null,null);
                     top.node.left = ln;
-                    Pair rp = new Pair(ln,1);
-                    st.push(rp);
+                    Pair lp = new Pair(ln, 1);
+                    st.push(lp);
                 }else{
                     top.node.left = null;
                 }
-                top.status++;
-            }else if(top.status == 2){
+                top.state++;
+            }else if(top.state == 2){
                 idx++;
                 if(arr[idx] != null){
-                    Node rn = new Node(arr[idx],null,null);
+                    Node rn = new Node(arr[idx], null,null);
                     top.node.right = rn;
                     Pair rp = new Pair(rn,1);
                     st.push(rp);
                 }else{
                     top.node.right = null;
                 }
-                top.status++;
+                top.state++;
             }else{
                 st.pop();
             }
         }
-        pir(root, 27, 72);
+
+        level_order_traversal(root);
     }
 }
