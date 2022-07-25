@@ -3,11 +3,7 @@
 public class linkedlist{
     //head of list
     Node head; 
-
-    //Linked list Node
-    //this inner class is made static
-    //so that main() can access it.
-
+    //Linked list Node this inner class is made static so that main() can access it.
     static class Node{
         int data;
         Node next;
@@ -52,21 +48,21 @@ public class linkedlist{
         while(currNode != null){
 
             // Print the data at current node
-            System.out.print(currNode.data + " ");
+            System.out.print(currNode.data + " " + "->");
             
             // Go to next node
             currNode = currNode.next;
         }
+
+        System.out.print(" ." );
+            
+        
     }
 
 
     public static void main(String args[]){
 
         linkedlist list = new linkedlist();
-
-        //
-        // ******INSERTION******
-        //
    
         // Insert the values
         list = insert(list, 1);
@@ -80,6 +76,7 @@ public class linkedlist{
    
         // Print the LinkedList
         printList(list);
+        
     }
 
 }
