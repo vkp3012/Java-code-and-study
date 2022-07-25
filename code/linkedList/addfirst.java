@@ -1,6 +1,6 @@
+import java.util.LinkedList;
 
-
-public class removefirstlinkedlist{
+public class addfirst{
 
     public static class Node{
         int data;
@@ -23,36 +23,35 @@ public class removefirstlinkedlist{
                 tail.next = temp;
                 tail = temp;
             }
-
             size++;
         }
 
-        void remove(){
+        public int addfirst(LinkedList list,int val){
+            Node temp = new Node();
+            temp.data = val;
+
             if(size == 0){
-                System.out.println("list is empty");
-            }else if(size == 1){
-                head = tail = null;
-                size = 0;
+                head = tail = temp;
             }else{
-                head = head.next;
-                size--;
+                temp.next = head;
+                head = temp;
             }
+            size++;
+            return temp.data;
         }
     }
 
-    public static void printlist(LinkedList list) {
+    public static void printlist(LinkedList list){
         for(Node temp = list.head; temp != null; temp = temp.next){
             System.out.print(temp.data + " ");
         }
-
         System.out.println();
     }
 
+    public static void main(String args[]){
 
-    public static void main(String args[]) {
         LinkedList list = new LinkedList();
 
-        list.add(10);
         list.add(20);
         list.add(30);
         list.add(40);
@@ -60,7 +59,8 @@ public class removefirstlinkedlist{
 
         printlist(list);
 
-        list.remove();
+        int ans = list.addfirst(list,10);
+        System.out.println(ans + " ");
 
         printlist(list);
 
