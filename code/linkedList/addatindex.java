@@ -28,7 +28,7 @@ public class addatindex{
         void addfirst(int val){
             Node temp = new Node();
             temp.data = val;
-
+            temp.next = head;
             head = temp;
 
             if(size == 0){
@@ -61,7 +61,8 @@ public class addatindex{
                 System.out.println("Invaild arguments");
             }else{
                 Node temp = head;
-                for(int i = 0;i<idx-1;i++){
+                
+                for(int i = 0; i<idx-1; i++){
                     temp = temp.next;
                 }
 
@@ -93,7 +94,8 @@ public class addatindex{
 
         printlist(list);
         
-        list.atindex(2,35);
+        list.atindex(6,35);
+
         printlist(list);
 
     }
