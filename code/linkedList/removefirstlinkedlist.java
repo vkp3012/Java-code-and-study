@@ -38,6 +38,23 @@ public class removefirstlinkedlist{
                 size--;
             }
         }
+
+        void removelast(){
+            if(size == 0){
+                System.out.println("list is empty");
+            }else if(size == 1){
+                head = tail = null;
+                size = 0;
+            }else{
+                Node temp = head;
+                for(int i = 0;i<size -2;i++){
+                    temp = temp.next;
+                }
+                tail = temp;
+                tail.next = null;
+                size--;
+            }
+        }
     }
 
     public static void printlist(LinkedList list) {
@@ -61,6 +78,10 @@ public class removefirstlinkedlist{
         printlist(list);
 
         list.remove();
+
+        printlist(list);
+
+        list.removelast();
 
         printlist(list);
 

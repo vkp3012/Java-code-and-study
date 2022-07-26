@@ -2,7 +2,7 @@
 
 public class reverse_ll_data{
     
-    private static int size;
+    // private static int size;
     static Node head;
     // Node head;
 

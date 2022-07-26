@@ -103,12 +103,12 @@ public class addlinkedlist{
         printlist(list);
         
         int ans = list.addfirst(5);
-        // System.out.println(ans);
+        System.out.println(ans);
 
         printlist(list);
 
         int ans1 = list.addlast(45);
-        // System.out.println(ans);
+        System.out.println(ans1);
 
         printlist(list);
 
