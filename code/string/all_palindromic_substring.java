@@ -66,7 +66,7 @@ public class all_palindromic_substring{
     }
 
     public static void main(String args[]){
-        String s1 = "ab";
+        String s1 = "abba";
         solution(s1);
     }
 
