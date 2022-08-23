@@ -4,11 +4,12 @@
         "code/string",
         "code/stack",
         "code/linkedList",
+        "code/hashmap",
         "code/graph",
         "code/binary_tree",
         "code/binarySearchTree",
+        "code/Recursion",
         "code/GenericTree",
-        "code/hashmap",
-        "code\\Recursion"
+        "code/array"
     ]
 }
