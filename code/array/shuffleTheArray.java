@@ -35,6 +35,6 @@ public class shuffleTheArray{
         int n = 3;
 
         int ans[]=helper(nums,n);
-        System.out.println();
+        System.out.println(ans);
     }
 }
