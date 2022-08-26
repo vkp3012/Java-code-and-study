@@ -45,7 +45,7 @@ package recursionArrayList;
 
 public class firstindex{
     public static void main(String args[]) {
-        int n = 6;
+        // int n = 6;
         int arr[] = {15,11,40,4,4,9};
         int x = 4;
 

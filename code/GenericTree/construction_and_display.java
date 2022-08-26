@@ -36,15 +36,18 @@ public class construction_and_display{
 
   public static void display(Node node){
     String str = node.data + "->";
-    for(Node child:node.children){
+    for(Node child : node.children){
       str += child.data + " ,";
     }
 
     str += " .";
+
     System.out.println(str);
-    for(Node child:node.children){
+
+    for(Node child : node.children){
       display(child);
     }
+    
   }
 
   public static void main(String[] args){

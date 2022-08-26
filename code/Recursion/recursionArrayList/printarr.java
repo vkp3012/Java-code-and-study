@@ -48,7 +48,7 @@ public class printarr{
 
     public static void main(String args[]) throws Exception {
         int arr[] = {3,1,0,7,5};
-        int n = 5;
+        // int n = 5;
 
         display(arr,0);
     }

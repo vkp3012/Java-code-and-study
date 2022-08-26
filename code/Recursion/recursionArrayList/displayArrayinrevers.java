@@ -48,7 +48,7 @@ public class displayArrayinrevers{
 
     public static void main(String args[]) {
 
-        int n = 5;
+        // int n = 5;
         int arr[] = {3,1,0,7,5};
 
         displayArrayReverse(arr,0);

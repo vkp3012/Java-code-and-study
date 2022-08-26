@@ -42,7 +42,7 @@ package recursionArrayList;
 public class maxOfArray{
 
     public static void main(String args[]) {
-        int n = 6;
+        // int n = 6;
         int arr[] = {15,30,40,4,11,9};
 
         int maxValue = maxValueArray(arr,0);
