@@ -6,11 +6,12 @@
         "code/linkedList",
         "code/hashmap",
         "code/graph",
+        "code/dp",
         "code/binary_tree",
         "code/binarySearchTree",
         "code/array",
         "code/Recursion",
         "code/GenericTree",
-        "code/dp"
+        "code/sort"
     ]
 }
