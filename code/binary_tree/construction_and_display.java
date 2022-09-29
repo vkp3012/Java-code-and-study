@@ -22,6 +22,17 @@ public class construction_and_display{
         }
     }
 
+    public static int sum(Node node){
+        if(node == null){
+            return 0;
+        }
+
+        int ln = sum(node.left);
+        int rn = sum(node.right);
+
+        return ln+rn+node.data;
+    }
+
     public static void display(Node node){
         //node self work
         if(node == null){
@@ -77,6 +88,8 @@ public class construction_and_display{
                 st.pop();
             }
         }
-        display(root);
+        // display(root);
+        int sumAns = sum(root);
+        System.out.println(sumAns);
     }
 }
