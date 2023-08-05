@@ -17,7 +17,7 @@ public class p5 {
             for(int j = 1;j<=nst;j++){
                 System.out.print("*\t");
             }
-            System.out.println();
+            System.out.println();          
             if(i<=n/2){
                 nst+=2;
                 nsp--;
